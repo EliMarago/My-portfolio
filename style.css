@@ -1293,3 +1293,72 @@ span {
   display: block;
   justify-content: center;
 }
+
+/* Schermi piccoli (smartphone, max 768px) */
+@media (max-width: 768px) {
+  html {
+    font-size: 40%;
+  }
+
+  .home-content h1 {
+    font-size: 3.2rem;
+  }
+
+  .slider {
+    width: 80%;
+    height: auto;
+  }
+
+  .slide {
+    height: 35rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    font-size: 3px;
+  }
+}
+/* Schermi molto piccoli (max 480px) */
+@media (max-width: 480px) {
+  html {
+    font-size: 45%;
+  }
+
+  .home-content h1 {
+    font-size: 2.8rem;
+  }
+
+  .navbar {
+    padding: 10px 3%;
+    flex-direction: column;
+  }
+
+  .slide {
+    height: 25rem;
+  }
+}
+/* Solo su mobile */
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 2.4rem;
+  }
+
+  .navbar {
+    display: none; /* Nascondi inizialmente il menu su mobile */
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar.show {
+    display: flex; /* Mostra il menu quando viene cliccato */
+  }
+}
+
+
+
+
+
+
