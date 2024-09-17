@@ -1322,7 +1322,7 @@ span {
 /* Schermi molto piccoli (max 480px) */
 @media (max-width: 480px) {
   html {
-    font-size: 45%;
+    font-size: 40%;
   }
 
   .home-content h1 {
@@ -1335,7 +1335,7 @@ span {
   }
 
   .slide {
-    height: 25rem;
+    height: 20rem;
   }
 }
 /* Solo su mobile */
@@ -1356,9 +1356,21 @@ span {
     display: flex; /* Mostra il menu quando viene cliccato */
   }
 }
+/* Schermi medi (tablet e schermi tra 768px e 1024px) */
+@media (max-width: 1024px) {
+  html {
+    font-size: 55%; /* Riduci la dimensione del testo */
+  }
 
+  .home-content h1 {
+    font-size: 4rem;
+  }
 
+  .slide {
+    height: 45rem;
+  }
 
-
-
-
+  .navbar.show {
+    display: flex; /* Mostra il menu quando viene cliccato */
+  }
+}
