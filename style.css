@@ -1297,7 +1297,7 @@ span {
 /* Schermi piccoli (smartphone, max 768px) */
 @media (max-width: 768px) {
   html {
-    font-size: 40%;
+    font-size: 35%;
   }
 
   .home-content h1 {
@@ -1319,25 +1319,6 @@ span {
     font-size: 3px;
   }
 }
-/* Schermi molto piccoli (max 480px) */
-@media (max-width: 480px) {
-  html {
-    font-size: 40%;
-  }
-
-  .home-content h1 {
-    font-size: 2.8rem;
-  }
-
-  .navbar {
-    padding: 10px 3%;
-    flex-direction: column;
-  }
-
-  .slide {
-    height: 20rem;
-  }
-}
 /* Solo su mobile */
 @media (max-width: 768px) {
   #menu-icon {
@@ -1356,21 +1337,58 @@ span {
     display: flex; /* Mostra il menu quando viene cliccato */
   }
 }
-/* Schermi medi (tablet e schermi tra 768px e 1024px) */
-@media (max-width: 1024px) {
-  html {
-    font-size: 55%; /* Riduci la dimensione del testo */
+/* Schermi grandi (desktop) */
+@media (min-width: 1024px) {
+  /* Imposta regole specifiche per schermi più grandi */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   .home-content h1 {
-    font-size: 4rem;
+    font-size: 5rem; /* Mantieni i titoli grandi */
   }
 
   .slide {
-    height: 45rem;
+    height: 60rem; /* Altezza grande per immagini su schermi grandi */
+  }
+}
+
+/* Schermi molto piccoli (max 480px) */
+@media (max-width: 480px) {
+  html {
+    font-size: 45%;
   }
 
-  .navbar.show {
-    display: flex; /* Mostra il menu quando viene cliccato */
+  .home-content h1 {
+    font-size: 2.8rem;
+  }
+
+  .navbar {
+    padding: 10px 3%;
+    flex-direction: column;
+  }
+
+  .slide {
+    height: 25rem;
+  }
+}
+@media (max-width: 768px) {
+  .home-content h1 {
+    font-size: 3.2rem;
+  }
+
+  .home-content p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-content h1 {
+    font-size: 2.8rem;
+  }
+
+  .home-content p {
+    font-size: 1.2rem;
   }
 }
