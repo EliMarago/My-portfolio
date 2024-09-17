@@ -1252,7 +1252,7 @@ span {
   margin: 0 0.25rem; /* Riduzione dello spazio tra i puntini */
 }
 .dots .active {
-  background-color: #2b5eca;
+  background-color: #f3d55f;
 }
 
 /* Contenitore per titolo e icona */
