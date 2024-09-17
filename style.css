@@ -1392,4 +1392,19 @@ span {
     font-size: 1.2rem;
   }
 }
+/* Adattamento per schermi più piccoli */
+@media (max-width: 768px) {
+  .btn-box {
+    flex-direction: column; /* Dispone i bottoni in verticale su mobile */
+    align-items: stretch;
+    gap: 40%;
+  }
+
+  .btn-box .btn {
+    width: 40%; /* I bottoni occupano tutta la larghezza disponibile */
+    font-size: 1.4rem; /* Riduci leggermente la dimensione del font */
+    padding: 25px 25px; /* Riduci il padding */
+    margin-top: -13%;
+  }
+}
 
