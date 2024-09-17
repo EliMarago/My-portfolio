@@ -1392,29 +1392,4 @@ span {
     font-size: 1.2rem;
   }
 }
-/* Schermi medi (tablet e schermi tra 768px e 1024px) */
-@media (max-width: 1024px) {
-  html {
-    font-size: 55%; /* Riduci la dimensione del testo */
-  }
 
-  .home-content h1 {
-    font-size: 4rem;
-  }
-
-  .slide {
-    height: 45rem;
-  }
-}
-@media (max-width: 768px) {
-  .btn-box {
-    flex-direction: column;
-    justify-content: space-between;
-    width: 24rem;
-    height: 24rem;
-  }
-  .btn-box button {
-    width: 100%; /* I bottoni occupano tutta la larghezza disponibile */
-    font-size: 1.4rem; /* Riduci leggermente la dimensione del font */
-  }
-}
